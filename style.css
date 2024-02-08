@@ -1,3 +1,10 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Variable */
 :root {
     --bg-color: #3E3232;
@@ -8,7 +15,22 @@
 }
 
 /* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
 
 /* Typography */
 
 /* style */
+body {
+    min-height: 100vh;
+}
