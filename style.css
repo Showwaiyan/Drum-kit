@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 main {
@@ -50,7 +50,7 @@ html {
 }
 h1 {
     font-family: var(--h1-font);
-    font-size: 4rem;
+    font-size: clamp(2.5rem,10vw,4rem);
 }
 h2 {
     font-family: var(--h2-font);
