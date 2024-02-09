@@ -12,6 +12,7 @@
     --border-color: #7E6363;
     --main-font-color: #A87C7C;
     --secondary-font-color: #E6BAA3;
+
     --span-font: 'Abel', sans-serif;
     --h2-font: 'Exo 2', sans-serif;
     --h1-font: 'Roboto', sans-serif;
@@ -23,14 +24,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
 }
 
 main {
     display: flex;
     justify-content: center;
     justify-items: center;
-    gap: 50px;
+    gap: 30px;
+
+    flex-wrap: wrap;
 }
 
 div.drum-set {
@@ -38,7 +41,7 @@ div.drum-set {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 20px;    
 }
 
 /* Typography */
@@ -65,6 +68,7 @@ span {
 /* style */
 body {
     min-height: 100vh;
+    min-width: 320px;
 
     background-color: var(--bg-color);
 }
