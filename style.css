@@ -73,6 +73,10 @@ body {
     background-color: var(--bg-color);
 }
 
+.drum-kit {
+    width: 80%;
+}
+
 .drum-set {
     width: 100px;
 
