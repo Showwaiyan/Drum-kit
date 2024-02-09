@@ -12,6 +12,9 @@
     --border-color: #7E6363;
     --main-font-color: #A87C7C;
     --secondary-font-color: #E6BAA3;
+    --span-font: 'Abel', sans-serif;
+    --h2-font: 'Exo 2', sans-serif;
+    --h1-font: 'Roboto', sans-serif;
 }
 
 /* Layout */
@@ -42,10 +45,28 @@ div.drum-set {
 html {
     font-size: 16px;
 }
+h1 {
+    font-family: var(--h1-font);
+    font-size: 4rem;
+}
+h2 {
+    font-family: var(--h2-font);
+    font-size: 2rem;
+}
+h1,h2 {
+    color: var(--main-font-color);
+}
+span {
+    font-family: var(--span-font);
+    color: var(--secondary-font-color);
+    font-size: 1.2rem;
+}
 
 /* style */
 body {
     min-height: 100vh;
+
+    background-color: var(--bg-color);
 }
 
 .drum-set {
@@ -53,4 +74,6 @@ body {
     border: 5px solid var(--border-color);
     
     padding: 10px;
+
+    cursor: pointer;
 }
