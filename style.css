@@ -71,7 +71,9 @@ body {
 
 .drum-set {
     width: 100px;
+
     border: 5px solid var(--border-color);
+    background: var(--drum-set-color);
     
     padding: 10px;
 
