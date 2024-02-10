@@ -1,9 +1,10 @@
 "use strict"
 
-const drumSets = document.querySelectorAll(".drum-set");
+const drumKit = document.querySelector(".drum-kit");
 
-drumSets.forEach(set=>{
-    set.addEventListener("click",e=>{
+drumKit.addEventListener("click",playSound)
 
-    })
-})
+function playSound(event) {
+    if (event.target.className === "drum-set") new Audio(`sounds/${event.target.id}.wav`).play();
+    else if (event.target.parentElement.className === "drum-set") new Audio(`sounds/${event.target.parentElement.id}.wav`).play();
+}
